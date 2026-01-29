@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;800&family=JetBrains+Mono:wght@500&display=swap');
+/*Page structure starts here*/
+:root
+{
+    --neon-blue: #00f2ff;
+    --neon-purple: #bc13fe;
+    --bg-dark: #08080a;
+}
+
+body /*Body of  the page*/
+{
+    background-color: var(--bg-dark);
+    color: #f8fafc;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow: hidden;
+}
+
+.mono
+{
+    font-family: 'JetBrains+Mono', monospace;
+}
+
+/*Glass effect for containers*/
+.containers
+{
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+/*Wordbox starts here*/
+.word-box 
+{
+    position: relative;
+    font-size: 2.75rem;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.07);
+    transition: color 0.2s ease, transform 0.2s ease;
+    margin: 0 15px;
+}
+
+.word-box.active 
+{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.word-box.correct 
+{
+    color: var(--neon-blue);
+    text-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+}
+
+.word-box.wrong 
+{
+    color: #ff3e3e;
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+/* Wordbox ends here */
+
+/*User overlay starts here*/
+.user-overlay 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--neon-blue);
+    white-space: nowrap;
+    pointer-events: none;
+}
+/*User overlay ends here*/
+/*Page structure ends here*/
+/*Glow starts here*/
+.glow 
+{
+    position: fixed;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.1;
+    z-index: -1;
+    pointer-events: none;
+}
+/*Glow ends here*/
+
+/*Stats dashboard starts here*/
+#wpm-display, #acc-display, #time-display 
+{
+    letter-spacing: -0.05em;
+    font-variant-numeric: tabular-nums;
+}
+
+/*Stats dashboard ends here*/
