@@ -23,7 +23,7 @@ A minimal, WPM (Words Per Minute) test built with JavaScript.
 - [ ] Custom word banks
 - [ ] Keypress sound effects
 
-###Showcase
+### Showcase
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/faea1681-59bd-4b3b-b029-4502574661a4" />
 
