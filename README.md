@@ -16,7 +16,7 @@ A minimal, WPM (Words Per Minute) test built with JavaScript.
 
 ### Tech
 * Vanilla ES6 JS
-* CSS3 (Flexbox + Neon Text Shadows)
+* CSS3 + TailwindCSS
 
 ### Roadmap
 - [ ] LocalStorage High Scores
